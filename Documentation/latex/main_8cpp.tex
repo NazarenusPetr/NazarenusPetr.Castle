@@ -1,0 +1,498 @@
+\hypertarget{main_8cpp}{}\section{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.\+cpp@{main.\+cpp}}
+{\ttfamily \#include $<$windows.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$tchar.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$math.\+h$>$}\\*
+{\ttfamily \#include $<$Windowsx.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}model.\+h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{main_8cpp_a598a3330b3c21701223ee0ca14316eca}{PI}~(double)3.\+1415
+\item 
+\#define \hyperlink{main_8cpp_a498d9f026138406895e9a34b504ac6a6}{W\+I\+N\+D\+O\+W\+\_\+\+W\+I\+D\+TH}~800
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+L\+R\+E\+S\+U\+LT C\+A\+L\+L\+B\+A\+CK \hyperlink{main_8cpp_a30a1e3b0304f1b083637664cbda94e72}{Wnd\+Proc} (H\+W\+ND h\+Wnd, U\+I\+NT message, W\+P\+A\+R\+AM w\+Param, L\+P\+A\+R\+AM l\+Param)
+\begin{DoxyCompactList}\small\item\em This function is responsible for drawing castle,cannon,lines of mointain, background playing field and shows all the text in the game. As it prescribe management in our game. For control of the game and drawing the background playing field meets the code. \end{DoxyCompactList}\item 
+void \hyperlink{main_8cpp_a21c2335e6df73b1864dd7563f6810caa}{Do\+Physics} (U\+L\+O\+N\+G\+L\+O\+NG dT)
+\begin{DoxyCompactList}\small\item\em Function void Do\+Physics responsible for all of physics in the game. In this function implements the birds position on the playing field, check with birds touch the pipe, restart the game, adding points with the passage of a bird pipes. \end{DoxyCompactList}\item 
+void \hyperlink{main_8cpp_a93ecb4242527b80e76b5e28209f67d2d}{Start\+Game} ()
+\begin{DoxyCompactList}\small\item\em function void Start\+Game () is designed for the beginning of the start of the game. This function contains all the initial parameters of castles and fields The function code is as follows\+: \end{DoxyCompactList}\item 
+int W\+I\+N\+A\+PI \hyperlink{main_8cpp_a661c2abc03926acfaeb93b4ae7db4943}{Win\+Main} (H\+I\+N\+S\+T\+A\+N\+CE h\+Instance, H\+I\+N\+S\+T\+A\+N\+CE h\+Prev\+Instance, L\+P\+S\+TR lp\+Cmd\+Line, int n\+Cmd\+Show)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+H\+I\+N\+S\+T\+A\+N\+CE \hyperlink{main_8cpp_a44f41244c97693b2fbd5244bcb1e86ec}{h\+Inst}
+\item 
+\hyperlink{struct_t_lcastle}{T\+Lcastle} \hyperlink{main_8cpp_ae27eb5f0a9384ff54e52ec254c5fe77b}{Lcastle}
+\item 
+\hyperlink{struct_t_rcastle}{T\+Rcastle} \hyperlink{main_8cpp_ad2f22af085e8fb82afc8f7f4c9af7452}{Rcastle}
+\item 
+\hyperlink{struct_t_shot}{T\+Shot} \hyperlink{main_8cpp_a3843683a90279624890b32c8f4658192}{Shot}
+\item 
+\hyperlink{struct_tmap}{Tmap} \hyperlink{main_8cpp_a24f38b0738dbe3f73a0e49a20e8ab9df}{Map}
+\item 
+H\+B\+I\+T\+M\+AP \hyperlink{main_8cpp_a9fc5abab889d6fd98fcc0efdc177bd7e}{h\+Bitmap} = N\+U\+LL
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{main.\+cpp@{main.\+cpp}!PI@{PI}}
+\index{PI@{PI}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{PI}{PI}}]{\setlength{\rightskip}{0pt plus 5cm}\#define PI~(double)3.\+1415}\hypertarget{main_8cpp_a598a3330b3c21701223ee0ca14316eca}{}\label{main_8cpp_a598a3330b3c21701223ee0ca14316eca}
+\index{main.\+cpp@{main.\+cpp}!W\+I\+N\+D\+O\+W\+\_\+\+W\+I\+D\+TH@{W\+I\+N\+D\+O\+W\+\_\+\+W\+I\+D\+TH}}
+\index{W\+I\+N\+D\+O\+W\+\_\+\+W\+I\+D\+TH@{W\+I\+N\+D\+O\+W\+\_\+\+W\+I\+D\+TH}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{W\+I\+N\+D\+O\+W\+\_\+\+W\+I\+D\+TH}{WINDOW_WIDTH}}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\+I\+N\+D\+O\+W\+\_\+\+W\+I\+D\+TH~800}\hypertarget{main_8cpp_a498d9f026138406895e9a34b504ac6a6}{}\label{main_8cpp_a498d9f026138406895e9a34b504ac6a6}
+
+
+\subsection{Function Documentation}
+\index{main.\+cpp@{main.\+cpp}!Do\+Physics@{Do\+Physics}}
+\index{Do\+Physics@{Do\+Physics}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{Do\+Physics(\+U\+L\+O\+N\+G\+L\+O\+N\+G d\+T)}{DoPhysics(ULONGLONG dT)}}]{\setlength{\rightskip}{0pt plus 5cm}void Do\+Physics (
+\begin{DoxyParamCaption}
+\item[{U\+L\+O\+N\+G\+L\+O\+NG}]{dT}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_a21c2335e6df73b1864dd7563f6810caa}{}\label{main_8cpp_a21c2335e6df73b1864dd7563f6810caa}
+
+
+Function void Do\+Physics responsible for all of physics in the game. In this function implements the birds position on the playing field, check with birds touch the pipe, restart the game, adding points with the passage of a bird pipes. 
+
+These formulas are responsible for the correctness of the flight calculation of projectile shells fired one of the castles 
+\begin{DoxyCode}
+1 Lcastle.sinus = sin(Lcastle.angle * PI / 180.0); //синус угла альфа
+2  Lcastle.cosin = cos(Lcastle.angle*PI / 180.0);//косинус альфа
+3  Lcastle.tangens = Lcastle.sinus / Lcastle.cosin;
+4  Lcastle.toright = 25 * Lcastle.cosin;
+5  Lcastle.upstairs = 25 * Lcastle.sinus;
+6  Lcastle.x1 = Lcastle.x + Lcastle.toright;
+7  Lcastle.y1 = Lcastle.y - Lcastle.upstairs;
+8 
+9  Rcastle.sinus = sin(Rcastle.angle * PI / 180.0); //синус угла альфа
+10  Rcastle.cosin = cos(Rcastle.angle*PI / 180.0);//косинус альфа
+11  Rcastle.tangens = Rcastle.sinus / Rcastle.cosin;
+12  Rcastle.toright = 25 * Rcastle.cosin;
+13  Rcastle.upstairs = 25 * Rcastle.sinus;
+14  Rcastle.x1 = Rcastle.x + Rcastle.toright;
+15  Rcastle.y1 = Rcastle.y - Rcastle.upstairs;
+\end{DoxyCode}
+
+
+This part of the code responsible for the flight of the projectile from 0 to 180 degrees. And the process of firing the gun, the action if the projectile hit the target. If the shell hit one of the locks, then it takes away the life. After one of the locks will end the life of the game end scoring another castle 
+\begin{DoxyCode}
+1 double dx = Lcastle.x - 10 - Shot.x;
+2     double dy = Lcastle.y - Shot.y;
+3     if (sqrt(dx*dx + dy*dy) <= 15 + Shot.r)
+4     \{
+5         Shot.draw = 0;
+6         Shot.x = 100;
+7         Shot.y = 100;
+8         Lcastle.health -= 10;
+9         if (Lcastle.health == 0)
+10         \{
+11             Map.gameover = 1;
+12         \}
+13         Lcastle.angle = 0;
+14         Rcastle.angle = 180;
+15     \}
+16     double dxR = Rcastle.x + 10 - Shot.x;
+17     double dyR = Rcastle.y - Shot.y;
+18     if (sqrt(dxR*dxR + dyR*dyR) <= 15 + Shot.r)
+19     \{
+20         Shot.draw = 0;
+21         Shot.x = 100;
+22         Shot.y = 100;
+23         Rcastle.health -= 10;
+24         if (Rcastle.health == 0)
+25         \{
+26             Map.gameover = 2;
+27         \}
+28         Lcastle.angle = 0;
+29         Rcastle.angle = 180;
+30     \}
+31     Map.xp = Map.xl1;
+32     for (int i = 0; i<230; i++)
+33     \{
+34         Map.yp = (4*Map.xp + 1760) / 23;
+35         Map.yp = 600 - Map.yp;
+36         if (Shot.x <= 250 && Shot.x >= Map.xp&&Shot.y + Shot.r >= Map.yp)
+37         \{
+38             Shot.draw = 0;
+39             Shot.x = 100;
+40             Shot.y = 100;
+41             Lcastle.angle = 0;
+42             Rcastle.angle = 180;
+43         \}
+44         Map.xp++;
+45     \}
+46     Map.xp = Map.xl3;//Map.xl3=250;Map.yl3=480;Map.xl5 = 410;Map.yl5 = 260;
+47     for (int i = 0; i<160; i++)
+48     \{
+49         Map.yp = (11 * Map.xp - 1790)/8;
+50         Map.yp = 600 - Map.yp;
+51         if (Shot.x <= 410 && Shot.x >= Map.xp&&Shot.y + Shot.r >= Map.yp)
+52         \{
+53             Shot.draw = 0;
+54             Shot.x = 100;
+55             Shot.y = 100;
+56             Lcastle.angle = 0;
+57             Rcastle.angle = 180;
+58         \}
+59         Map.xp++;
+60     \}
+61     
+62     Map.xp = Map.xl5;//Map.xl5=410;Map.yl5=260;Map.xl6=520;Map.yl6=460;
+63     for (int i = 0; i<110; i++)
+64     \{
+65         Map.yp = (-20 * Map.xp + 12140) / 11;
+66         Map.yp = 600 - Map.yp;
+67         if (Shot.x >= 410 && Shot.x <= Map.xp&&Shot.y + Shot.r >= Map.yp)
+68         \{
+69             Shot.draw = 0;
+70             Shot.x = 100;
+71             Shot.y = 100;
+72             Lcastle.angle = 0;
+73             Rcastle.angle = 180;
+74         \}
+75         Map.xp++;
+76     \}
+77 
+78     Map.xp = Map.xl6;//Map.xl6=520;Map.yl6=460;Map.xl7=590;Map.yl7=500;
+79     for (int i = 0; i<70; i++)
+80     \{
+81         Map.yp = (-4 * Map.xp + 3060) / 7;
+82         Map.yp = 600 - Map.yp;
+83         if (Shot.x >= 520 && Shot.x <= Map.xp&&Shot.y + Shot.r >= Map.yp)
+84         \{
+85             Shot.draw = 0;
+86             Shot.x = 100;
+87             Shot.y = 100;
+88             Lcastle.angle = 0;
+89             Rcastle.angle = 180;
+90         \}
+91         Map.xp++;
+92     \}
+93 
+94     Map.xp = Map.xl7;//Map.xl7=590;Map.yl7=500;Map.xl8=750;Map.yl8=500;
+95     for (int i = 0; i<160; i++)
+96     \{
+97         Map.yp = 500;
+98         if (Shot.x >= 520 && Shot.x <= Map.xp&&Shot.y + Shot.r >= Map.yp)
+99         \{
+100             Shot.draw = 0;
+101             Shot.x = 100;
+102             Shot.y = 100;
+103             Lcastle.angle = 0;
+104             Rcastle.angle = 180;
+105         \}
+106         Map.xp++;
+107     \}
+108 
+109 
+110     if ((Shot.x < 0) || (Shot.x > 800) || (Shot.y < 0) || (Shot.y > 600))
+111     \{
+112         Shot.draw = 0;
+113         Shot.x = 100;
+114         Shot.y = 100;
+115         Lcastle.angle = 0;
+116         Rcastle.angle = 180;
+117     \}
+118     else
+119     \{
+120 
+121     \}
+\end{DoxyCode}
+ \index{main.\+cpp@{main.\+cpp}!Start\+Game@{Start\+Game}}
+\index{Start\+Game@{Start\+Game}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{Start\+Game()}{StartGame()}}]{\setlength{\rightskip}{0pt plus 5cm}void Start\+Game (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_a93ecb4242527b80e76b5e28209f67d2d}{}\label{main_8cpp_a93ecb4242527b80e76b5e28209f67d2d}
+
+
+function void Start\+Game () is designed for the beginning of the start of the game. This function contains all the initial parameters of castles and fields The function code is as follows\+: 
+
+
+\begin{DoxyCode}
+1 void StartGame()
+2 \{
+3 
+4     srand(GetTickCount());
+5 
+6     RECT r = \{ 100, 100, 700, 400 \};
+7     Map.gameover = 0;//0-игра идет, 1-лицо сломалось у левого, 2-лицо сломалось у правого
+8     Lcastle.angle = 10;
+9     Lcastle.x = 55;
+10     Lcastle.y = 500;
+11     Lcastle.x1 = 80;
+12     Lcastle.y1 = 475;
+13     Rcastle.angle = 170;
+14     Rcastle.x = 715;
+15     Rcastle.y = 485;
+16     Rcastle.x1 = 690;
+17     Rcastle.y1 = 475;
+18     Lcastle.health = 30;
+19     Rcastle.health = 30;
+20     Shot.switched=0;
+21     Shot.r = 10;
+22     Shot.x = 20;
+23     Shot.y = 20;
+24     Shot.t = 0;
+25     Shot.vnx = 140;
+26     Shot.vny = 140;
+27     Shot.a = 0.1;
+28     Shot.y1 = Lcastle.y1;
+29     Shot.x1 = Lcastle.x1;
+30     Shot.changed = 0;
+31     Shot.G = 35;
+32     Shot.draw = 0;
+33     Map.x = 60;
+34     Map.y = 600;
+35     Map.xp = 60;
+36     Map.yp = 600;
+37     Map.xl1 = 20;
+38     Map.yl1 = 520;
+39     //Map.xl2 = 180;
+40     //Map.yl2 = 480;
+41     Map.xl3 = 250;
+42     Map.yl3 = 480;
+43     //Map.xl4 = 370;
+44     //Map.yl4 = 300;
+45     Map.xl5 = 410;
+46     Map.yl5 = 260;
+47     Map.xl6 = 520;
+48     Map.yl6 = 460;
+49     Map.xl7 = 590;
+50     Map.yl7 = 500;
+51     Map.xl8 = 750;
+52     Map.yl8 = 500;
+53     Map.info=0;
+54 \}
+\end{DoxyCode}
+ \index{main.\+cpp@{main.\+cpp}!Win\+Main@{Win\+Main}}
+\index{Win\+Main@{Win\+Main}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{Win\+Main(\+H\+I\+N\+S\+T\+A\+N\+C\+E h\+Instance, H\+I\+N\+S\+T\+A\+N\+C\+E h\+Prev\+Instance, L\+P\+S\+T\+R lp\+Cmd\+Line, int n\+Cmd\+Show)}{WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)}}]{\setlength{\rightskip}{0pt plus 5cm}int W\+I\+N\+A\+PI Win\+Main (
+\begin{DoxyParamCaption}
+\item[{H\+I\+N\+S\+T\+A\+N\+CE}]{h\+Instance, }
+\item[{H\+I\+N\+S\+T\+A\+N\+CE}]{h\+Prev\+Instance, }
+\item[{L\+P\+S\+TR}]{lp\+Cmd\+Line, }
+\item[{int}]{n\+Cmd\+Show}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_a661c2abc03926acfaeb93b4ae7db4943}{}\label{main_8cpp_a661c2abc03926acfaeb93b4ae7db4943}
+\index{main.\+cpp@{main.\+cpp}!Wnd\+Proc@{Wnd\+Proc}}
+\index{Wnd\+Proc@{Wnd\+Proc}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{Wnd\+Proc(\+H\+W\+N\+D h\+Wnd, U\+I\+N\+T message, W\+P\+A\+R\+A\+M w\+Param, L\+P\+A\+R\+A\+M l\+Param)}{WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)}}]{\setlength{\rightskip}{0pt plus 5cm}L\+R\+E\+S\+U\+LT C\+A\+L\+L\+B\+A\+CK Wnd\+Proc (
+\begin{DoxyParamCaption}
+\item[{H\+W\+ND}]{h\+Wnd, }
+\item[{U\+I\+NT}]{message, }
+\item[{W\+P\+A\+R\+AM}]{w\+Param, }
+\item[{L\+P\+A\+R\+AM}]{l\+Param}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_a30a1e3b0304f1b083637664cbda94e72}{}\label{main_8cpp_a30a1e3b0304f1b083637664cbda94e72}
+
+
+This function is responsible for drawing castle,cannon,lines of mointain, background playing field and shows all the text in the game. As it prescribe management in our game. For control of the game and drawing the background playing field meets the code. 
+
+
+\begin{DoxyCode}
+1 switch (message)
+2    \{
+3    case WM\_CREATE: //load picture on background 
+4        hBitmap = (HBITMAP)LoadImage(hInst, L"1.bmp", IMAGE\_BITMAP, 0, 0, LR\_LOADFROMFILE);
+5        break;
+6 
+7    case WM\_KEYDOWN:
+8        switch (wParam)
+9        \{
+10        case 'R': //Restart game
+11        ch.y=100;
+12        dX=-150;
+13       for (int i = 0; i<TUBE\_COUNT; i++)
+14        \{tubes[i] = CreateTube(i*(WINDOW\_WIDTH / TUBE\_COUNT) + WINDOW\_WIDTH);\}
+15        Score=0;
+16        GameOver=0;
+17        break;
+18        case ' ': //Jump birds
+19            ch.vy = -300;
+20            break;
+21        case 'P':  //Pause game
+22            pause = !(pause);
+23            break;
+24        case VK\_F5: case 'S': //Save coordinate bird and tube
+25            tmpX = ch.X;
+26            tmpY = ch.y;
+27            tmpV = ch.vy;
+28            tmpScore = Score;
+29            //
+30            for (int i(0); i < TUBE\_COUNT;i++)
+31            \{ 
+32                tmpTX[i] = tubes[i].X;
+33                tmpTY[i] = tubes[i].Y;
+34            \}           
+35            break;
+36        case VK\_F8: case 'L': //Load coordinate bird and tube
+37            ch.X = tmpX;
+38            ch.y = tmpY;
+39            ch.vy = tmpV;
+40            Score = tmpScore;
+41            //
+42            for (int i(0); i < TUBE\_COUNT; i++)
+43            \{
+44                tubes[i].X = tmpTX[i];
+45                tubes[i].Y = tmpTY[i];
+46            \}
+47            break;
+48 
+49        \}
+\end{DoxyCode}
+ This part of the code responsible for drawing tubes and birds. Drawing in Win\+Api performed using brushes and pens. With feathers, we draw the contours of our castle,cannon and lines of mointain. With a brush paints we figure our color. 
+\begin{DoxyCode}
+1 case WM\_PAINT:
+2 
+3         PAINTSTRUCT     ps;
+4         HDC             hdc;
+5         BITMAP          bitmap;
+6         HDC             hdcMem;
+7         HGDIOBJ         oldBitmap;
+8         hdc = BeginPaint(hWnd, &ps);
+9         RECT rect;
+10         GetClientRect(hWnd, &rect);
+11         width = rect.right;
+12         height = rect.bottom;
+13 
+14         backbuffDC = CreateCompatibleDC(hdc);
+15 
+16         backbuffer = CreateCompatibleBitmap(hdc, width, height);
+17 
+18         savedDC = SaveDC(backbuffDC);
+19 
+20         SelectObject(backbuffDC, backbuffer);
+21             
+22 
+23         // Draw HERE
+24 
+25         //clear window
+26         hBrush = CreateSolidBrush(RGB(255, 255, 255));
+27         FillRect(backbuffDC, &rect, hBrush);
+28         DeleteObject(hBrush);
+29             hdcMem = CreateCompatibleDC(hdc);
+30         oldBitmap = SelectObject(hdcMem, hBitmap);
+31  GetObject(hBitmap, sizeof(bitmap), &bitmap);
+32         BitBlt(backbuffDC, 0, 0, bitmap.bmWidth, bitmap.bmHeight, hdcMem, 0, 0, SRCCOPY);
+33         //draw castles
+34         hPen = CreatePen(PS\_SOLID, 3, RGB(0, 255, 0));//!
+35    hOldPen = (HPEN)SelectObject(backbuffDC, hPen);//!
+36         //Lcastle.d=sqrt((Lcastle.width*Lcastle.width)+(Lcastle.height*Lcastle.height));
+37         Rectangle(backbuffDC, Lcastle.x - 25, Lcastle.y - 15, Lcastle.x + 5, Lcastle.y + 15);
+38         MoveToEx(backbuffDC, Lcastle.x, Lcastle.y, NULL);
+39         LineTo(backbuffDC, Lcastle.x1, Lcastle.y1);
+40         Rectangle(backbuffDC, Rcastle.x - 5, Rcastle.y - 15, Rcastle.x + 25, Rcastle.y + 15);
+41         MoveToEx(backbuffDC, Rcastle.x, Rcastle.y, NULL);
+42         LineTo(backbuffDC, Rcastle.x1, Rcastle.y1);
+43 
+44         MoveToEx(backbuffDC, Map.xl1, Map.yl1, NULL);
+45         LineTo(backbuffDC, Map.xl3, Map.yl3);
+46         MoveToEx(backbuffDC, Map.xl3, Map.yl3, NULL);
+47         LineTo(backbuffDC, Map.xl5, Map.yl5);
+48         MoveToEx(backbuffDC, Map.xl5, Map.yl5, NULL);
+49         LineTo(backbuffDC, Map.xl6, Map.yl6);
+50         MoveToEx(backbuffDC, Map.xl6, Map.yl6, NULL);
+51         LineTo(backbuffDC, Map.xl7, Map.yl7);
+52         MoveToEx(backbuffDC, Map.xl7, Map.yl7, NULL);
+53         LineTo(backbuffDC, Map.xl8, Map.yl8);
+54 
+55         //draw shot
+56 
+57         if (Shot.draw != 0)
+58         \{
+59             Ellipse(backbuffDC, Shot.x - Shot.r, Shot.y - Shot.r, Shot.x + Shot.r, Shot.y + Shot.r);
+60         \}
+61         SelectObject(backbuffDC, hOldPen);
+62    DeleteObject(hPen);
+\end{DoxyCode}
+ This part of the code responsible for entering text on a screen. To enter text on the screen creates an array of characters. Using this array, we can create the text. If the number of characters exceeds the specified number of the program will display an error. The text displayed on the screen at a certain place and under certain conditions. The implementation is shown below 
+\begin{DoxyCode}
+1 WCHAR s[100];
+2         wsprintf(s, \_T("%d"), (int)Lcastle.health);
+3         TextOut(backbuffDC, Lcastle.x - 20, Lcastle.y - 5, s, wcslen(s));
+4         wsprintf(s, \_T("%d"), (int)Rcastle.health);
+5         TextOut(backbuffDC, Rcastle.x + 5, Rcastle.y - 5, s, wcslen(s));
+6         wsprintf(s, \_T("Press I to check the instructions"));
+7         TextOut(backbuffDC, 25, 20, s, wcslen(s));
+8         
+9         if(Map.info==0)
+10         \{
+11 
+12         \}
+13         else
+14         \{
+15             wsprintf(s, \_T("To increase gun's height press and hold W"));
+16             TextOut(backbuffDC, 25, 45, s, wcslen(s));
+17             wsprintf(s, \_T("To decrease gun's height press and hold S"));
+18             TextOut(backbuffDC, 25, 60, s, wcslen(s));
+19             wsprintf(s, \_T("To shoot press space"));
+20             TextOut(backbuffDC, 25, 75, s, wcslen(s));
+21             wsprintf(s, \_T("To restart press R"));
+22             TextOut(backbuffDC, 25, 90, s, wcslen(s));
+23         \}
+24         if (Shot.switched == 0)
+25         \{
+26             wsprintf(s, \_T("Right castle's turn!"));
+27             TextOut(backbuffDC, 600, 10, s, wcslen(s));
+28         \}
+29         if (Shot.switched == 1)
+30         \{
+31             wsprintf(s, \_T("Left castle's turn!"));
+32             TextOut(backbuffDC, 600, 10, s, wcslen(s));
+33         \}
+34         if (Map.gameover == 1)
+35         \{
+36             wsprintf(s, \_T("Game over!"));
+37             TextOut(backbuffDC, 600, 35, s, wcslen(s));
+38             wsprintf(s, \_T("Right castle won!"));
+39             TextOut(backbuffDC, 600, 50, s, wcslen(s));
+40             wsprintf(s, \_T("GAME OVER!"));
+41             TextOut(backbuffDC, 350, 25, s, wcslen(s));
+42             wsprintf(s, \_T("PRESS 'R' TO RESTART!"));
+43             TextOut(backbuffDC, 320, 50, s, wcslen(s));
+44         \}
+45         if (Map.gameover == 2)
+46         \{
+47             wsprintf(s, \_T("Game over!"));
+48             TextOut(backbuffDC, 600, 35, s, wcslen(s));
+49             wsprintf(s, \_T("Left castle won!"));
+50             TextOut(backbuffDC, 600, 50, s, wcslen(s));
+51             wsprintf(s, \_T("GAME OVER!"));
+52             TextOut(backbuffDC, 350, 25, s, wcslen(s));
+53             wsprintf(s, \_T("PRESS 'R' TO RESTART!"));
+54             TextOut(backbuffDC, 320, 50, s, wcslen(s));
+55         \}
+\end{DoxyCode}
+ 
+
+\subsection{Variable Documentation}
+\index{main.\+cpp@{main.\+cpp}!h\+Bitmap@{h\+Bitmap}}
+\index{h\+Bitmap@{h\+Bitmap}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{h\+Bitmap}{hBitmap}}]{\setlength{\rightskip}{0pt plus 5cm}H\+B\+I\+T\+M\+AP h\+Bitmap = N\+U\+LL}\hypertarget{main_8cpp_a9fc5abab889d6fd98fcc0efdc177bd7e}{}\label{main_8cpp_a9fc5abab889d6fd98fcc0efdc177bd7e}
+\index{main.\+cpp@{main.\+cpp}!h\+Inst@{h\+Inst}}
+\index{h\+Inst@{h\+Inst}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{h\+Inst}{hInst}}]{\setlength{\rightskip}{0pt plus 5cm}H\+I\+N\+S\+T\+A\+N\+CE h\+Inst}\hypertarget{main_8cpp_a44f41244c97693b2fbd5244bcb1e86ec}{}\label{main_8cpp_a44f41244c97693b2fbd5244bcb1e86ec}
+\index{main.\+cpp@{main.\+cpp}!Lcastle@{Lcastle}}
+\index{Lcastle@{Lcastle}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{Lcastle}{Lcastle}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+Lcastle} Lcastle}\hypertarget{main_8cpp_ae27eb5f0a9384ff54e52ec254c5fe77b}{}\label{main_8cpp_ae27eb5f0a9384ff54e52ec254c5fe77b}
+\index{main.\+cpp@{main.\+cpp}!Map@{Map}}
+\index{Map@{Map}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{Map}{Map}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tmap} Map}\hypertarget{main_8cpp_a24f38b0738dbe3f73a0e49a20e8ab9df}{}\label{main_8cpp_a24f38b0738dbe3f73a0e49a20e8ab9df}
+\index{main.\+cpp@{main.\+cpp}!Rcastle@{Rcastle}}
+\index{Rcastle@{Rcastle}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{Rcastle}{Rcastle}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+Rcastle} Rcastle}\hypertarget{main_8cpp_ad2f22af085e8fb82afc8f7f4c9af7452}{}\label{main_8cpp_ad2f22af085e8fb82afc8f7f4c9af7452}
+\index{main.\+cpp@{main.\+cpp}!Shot@{Shot}}
+\index{Shot@{Shot}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{Shot}{Shot}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+Shot} Shot}\hypertarget{main_8cpp_a3843683a90279624890b32c8f4658192}{}\label{main_8cpp_a3843683a90279624890b32c8f4658192}
