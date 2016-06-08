@@ -1,0 +1,75 @@
+﻿Построение начато 08.06.2016 13:18:38.
+     1>Проект "C:\Users\Faust611\Desktop\Kursach_Pet'ka\Kursovik_win\Kursovik_win.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(547): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(547): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(547): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(547): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(548): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(548): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(549): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(549): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(550): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(550): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(550): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(550): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(551): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(551): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(552): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(552): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(554): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(554): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(555): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(555): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(556): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(556): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(557): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(557): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(558): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(558): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(559): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(559): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(560): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(560): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(561): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(561): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(562): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(562): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(563): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(563): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(569): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(569): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(569): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(569): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(576): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(576): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(578): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(578): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(406): warning C4101: pieY: неиспользованная локальная переменная
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(406): warning C4101: alpha: неиспользованная локальная переменная
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(404): warning C4101: dy: неиспользованная локальная переменная
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(395): warning C4101: ps: неиспользованная локальная переменная
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(403): warning C4101: xPos: неиспользованная локальная переменная
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(406): warning C4101: pieX: неиспользованная локальная переменная
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(394): warning C4101: wmId: неиспользованная локальная переменная
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(403): warning C4101: yPos: неиспользованная локальная переменная
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(394): warning C4101: wmEvent: неиспользованная локальная переменная
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(407): warning C4101: r: неиспользованная локальная переменная
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(404): warning C4101: dx: неиспользованная локальная переменная
+     1>c:\users\faust611\desktop\kursach_pet'ka\kursovik_win\main.cpp(396): warning C4101: hdc: неиспользованная локальная переменная
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\Kursovik_win.exe.embed.manifest.res" Debug\Kursovik_win_manifest.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Faust611\Desktop\Kursach_Pet'ka\Debug\Kursovik_win.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Kursovik_win.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Faust611\Desktop\Kursach_Pet'ka\Debug\Kursovik_win.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Faust611\Desktop\Kursach_Pet'ka\Debug\Kursovik_win.lib" /MACHINE:X86 Debug\Kursovik_win.exe.embed.manifest.res
+         Debug\main.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\Kursovik_win.exe.embed.manifest" /manifest Debug\Kursovik_win.exe.intermediate.manifest
+       LinkEmbedManifest:
+         Kursovik_win.vcxproj -> C:\Users\Faust611\Desktop\Kursach_Pet'ka\Debug\Kursovik_win.exe
+     1>Построение проекта "C:\Users\Faust611\Desktop\Kursach_Pet'ka\Kursovik_win\Kursovik_win.vcxproj" завершено (целевые объекты Build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:09.16
